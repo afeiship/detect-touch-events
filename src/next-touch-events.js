@@ -8,7 +8,7 @@
   var msPointerEnabledSupport = global.navigator.msPointerEnabled;
   var touchSupport = 'ontouchstart' in global;
 
-  nx.decalre('nx.TouchEvents',{
+  nx.declare('nx.TouchEvents',{
     statics:{
       init:function(){
         var eventsList = [];
@@ -37,7 +37,7 @@
 
 
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = nx.DetectTouchEvents;
+    module.exports = nx.TouchEvents;
   }
 
 }());
