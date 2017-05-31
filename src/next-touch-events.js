@@ -10,8 +10,9 @@
 
   nx.declare('nx.TouchEvents',{
     statics:{
+      eventsList:[],
       init:function(){
-        var eventsList = [];
+        var eventsList = this.eventsList;
         switch(true){
           case pointerEnabledSupport:
             eventsList = ['pointerdown','pointermove','pointerup'];
