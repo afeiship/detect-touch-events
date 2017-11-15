@@ -15,9 +15,9 @@
   var NxTouchEvents = nx.declare('nx.TouchEvents',{
     statics:{
       eventsList:[],
-      init:function(){
+      init : function () {
         var eventsList = this.eventsList;
-        switch(true){
+        switch (true) {
           case pointerEnabledSupport:
             eventsList = EVENTS_POINTER;
             break;
@@ -28,13 +28,13 @@
             eventsList = EVENTS_TOUCH;
             break;
           default:
-           eventsList = EVENTS_MOUSE;
+            eventsList = EVENTS_MOUSE;
         }
 
-        nx.mix(this,{
-          TOUCH_START:eventsList[0],
-          TOUCH_MOVE:eventsList[1],
-          TOUCH_END:eventsList[2]
+        nx.mix(this, {
+          TOUCH_START: eventsList[0],
+          TOUCH_MOVE: eventsList[1],
+          TOUCH_END: eventsList[2]
         });
       }
     }
