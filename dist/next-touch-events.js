@@ -7,6 +7,10 @@
   var pointerEnabledSupport = global.navigator.pointerEnabled;
   var msPointerEnabledSupport = global.navigator.msPointerEnabled;
   var touchSupport = 'ontouchstart' in global;
+  var EVENTS_POINTER = ['pointerdown','pointermove','pointerup'];
+  var EVENTS_MS_POINTER = ['MSPointerDown','MSPointerMove','MSPointerUp'];
+  var EVENTS_TOUCH = ['touchstart','touchmove','touchend'];
+  var EVENTS_MOUSE = ['mousedown','mousemove','mouseup'];
 
   var NxTouchEvents = nx.declare('nx.TouchEvents',{
     statics:{
@@ -15,16 +19,16 @@
         var eventsList = this.eventsList;
         switch(true){
           case pointerEnabledSupport:
-            eventsList = ['pointerdown','pointermove','pointerup'];
+            eventsList = EVENTS_POINTER;
             break;
           case msPointerEnabledSupport:
-            eventsList = ['MSPointerDown','MSPointerMove','MSPointerUp'];
+            eventsList = EVENTS_MS_POINTER;
             break;
           case touchSupport:
-            eventsList = ['touchstart','touchmove','touchend']
+            eventsList = EVENTS_TOUCH;
             break;
           default:
-           eventsList =['mousedown','mousemove','mouseup'];
+           eventsList = EVENTS_MOUSE;
         }
 
         nx.mix(this,{
