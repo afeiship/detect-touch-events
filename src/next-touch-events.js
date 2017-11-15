@@ -1,6 +1,6 @@
 (function () {
 
-  var global = global || this;
+  var global = global || this || self || window;
   var nx = global.nx || require('next-js-core2');
 
   //supports:
@@ -8,7 +8,7 @@
   var msPointerEnabledSupport = global.navigator.msPointerEnabled;
   var touchSupport = 'ontouchstart' in global;
 
-  nx.declare('nx.TouchEvents',{
+  var NxTouchEvents = nx.declare('nx.TouchEvents',{
     statics:{
       eventsList:[],
       init:function(){
@@ -26,7 +26,7 @@
           default:
            eventsList =['mousedown','mousemove','mouseup'];
         }
-        
+
         nx.mix(this,{
           TOUCH_START:eventsList[0],
           TOUCH_MOVE:eventsList[1],
@@ -38,7 +38,7 @@
 
 
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = nx.TouchEvents;
+    module.exports = NxTouchEvents;
   }
 
 }());
