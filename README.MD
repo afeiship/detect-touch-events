@@ -1,8 +1,22 @@
 # next-touch-events
-> Next touch events for different devices.
+> Next touch events for different devices
 
+## install
+```bash
+npm install -S afeiship/next-touch-events --registry=https://registry.npm.taobao.org
+```
 
-## resources:
+## apis
+| api | params | description   |
+|-----|--------|---------------|
+| get | -      | desc balabala |
 
-## todos:
-- [ ] todo list..
+## usage
+```js
+import NxTouchEvents from 'next-touch-events';
+
+// code goes here:
+```
+
+## resources
+- https://github.com/afeiship

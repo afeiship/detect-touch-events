@@ -1,6 +1,6 @@
 {
   "name": "next-touch-events",
-  "description": "next touch events for different devices.",
+  "description": "Next touch events for different devices",
   "main": "dist/next-touch-events.js",
   "authors": [
     "afei"
@@ -20,7 +20,7 @@
     "test",
     "tests",
     "src",
-    "gulp",
+    "build",
     "gulpfile.js"
   ]
 }

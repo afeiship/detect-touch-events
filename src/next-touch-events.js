@@ -1,21 +1,20 @@
-(function () {
-
-  var global = global || this || self || window;
+(function() {
+  var global = global || this || window || Function('return this')();
   var nx = global.nx || require('next-js-core2');
 
   //supports:
   var pointerEnabledSupport = global.navigator.pointerEnabled;
   var msPointerEnabledSupport = global.navigator.msPointerEnabled;
   var touchSupport = 'ontouchstart' in global;
-  var EVENTS_POINTER = ['pointerdown','pointermove','pointerup'];
-  var EVENTS_MS_POINTER = ['MSPointerDown','MSPointerMove','MSPointerUp'];
-  var EVENTS_TOUCH = ['touchstart','touchmove','touchend'];
-  var EVENTS_MOUSE = ['mousedown','mousemove','mouseup'];
+  var EVENTS_POINTER = ['pointerdown', 'pointermove', 'pointerup'];
+  var EVENTS_MS_POINTER = ['MSPointerDown', 'MSPointerMove', 'MSPointerUp'];
+  var EVENTS_TOUCH = ['touchstart', 'touchmove', 'touchend'];
+  var EVENTS_MOUSE = ['mousedown', 'mousemove', 'mouseup'];
 
-  var NxTouchEvents = nx.declare('nx.TouchEvents',{
-    statics:{
-      eventsList:[],
-      init : function () {
+  var NxTouchEvents = nx.declare('nx.TouchEvents', {
+    statics: {
+      eventsList: [],
+      init: function() {
         var eventsList = this.eventsList;
         switch (true) {
           case pointerEnabledSupport:
@@ -40,9 +39,7 @@
     }
   });
 
-
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = NxTouchEvents;
   }
-
-}());
+})();
