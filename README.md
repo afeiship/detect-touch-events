@@ -7,9 +7,11 @@ npm install -S afeiship/next-touch-events --registry=https://registry.npm.taobao
 ```
 
 ## apis
-| api | params | description   |
-|-----|--------|---------------|
-| get | -      | desc balabala |
+| api         | description   |
+| ----------- | ------------- |
+| TOUCH_START | pointer-start |
+| TOUCH_MOVE  | pointer-move  |
+| TOUCH_END   | pointer-end   |
 
 ## usage
 ```js
