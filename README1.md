@@ -16,7 +16,7 @@ npm install -S afeiship/next-touch-events --registry=https://registry.npm.taobao
 import NxTouchEvents from 'next-touch-events';
 
 // code goes here:
+NxTouchEvents.TOUCH_START
+NxTouchEvents.TOUCH_MOVE
+NxTouchEvents.TOUCH_END
 ```
-
-## resources
-- https://github.com/afeiship
