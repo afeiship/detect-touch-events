@@ -31,9 +31,15 @@
         }
 
         nx.mix(this, {
+          // will be removed:
           TOUCH_START: eventsList[0],
           TOUCH_MOVE: eventsList[1],
-          TOUCH_END: eventsList[2]
+          TOUCH_END: eventsList[2],
+
+          // new:
+          START: eventsList[0],
+          MOVE: eventsList[1],
+          END: eventsList[2]
         });
       }
     }

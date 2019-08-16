@@ -1,6 +1,6 @@
 {
   "name": "next-touch-events",
-  "description": "Next touch events for different devices",
+  "description": "Next touch events for different devices.",
   "main": "dist/next-touch-events.js",
   "authors": [
     "afei"

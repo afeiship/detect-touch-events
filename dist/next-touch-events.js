@@ -2,6 +2,7 @@
  * name: next-touch-events
  * url: https://github.com/afeiship/next-touch-events
  * version: 1.0.0
+ * date: 2019-08-16T09:24:46.307Z
  * license: MIT
  */
 
@@ -38,9 +39,15 @@
         }
 
         nx.mix(this, {
+          // will be removed:
           TOUCH_START: eventsList[0],
           TOUCH_MOVE: eventsList[1],
-          TOUCH_END: eventsList[2]
+          TOUCH_END: eventsList[2],
+
+          // new:
+          START: eventsList[0],
+          MOVE: eventsList[1],
+          END: eventsList[2]
         });
       }
     }
@@ -50,3 +57,5 @@
     module.exports = NxTouchEvents;
   }
 })();
+
+//# sourceMappingURL=next-touch-events.js.map

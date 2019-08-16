@@ -1,7 +1,7 @@
 {
   "name": "next-touch-events",
   "version": "1.0.0",
-  "description": "Next touch events for different devices",
+  "description": "Next touch events for different devices.",
   "homepage": "https://github.com/afeiship/next-touch-events",
   "author": {
     "name": "afei",
@@ -16,13 +16,16 @@
   "license": "MIT",
   "devDependencies": {
     "del": "^2.2.1",
-    "gulp": "^3.9.1",
-    "gulp-bump": "^2.7.0",
+    "gulp": "^4.0.2",
+    "gulp-bump": "^3.1.3",
     "gulp-concat": "^2.6.0",
+    "gulp-debug": "^4.0.0",
     "gulp-header": "^2.0.7",
+    "gulp-ignore": "^2.0.2",
     "gulp-load-plugins": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^2.1.2",
     "jest": "^23.6.0",
     "next-nice-comments": "github:afeiship/next-nice-comments",
