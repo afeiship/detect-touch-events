@@ -3,8 +3,8 @@
   var nx = global.nx || require('next-js-core2');
 
   //supports:
-  var pointerEnabledSupport = global.navigator.pointerEnabled;
-  var msPointerEnabledSupport = global.navigator.msPointerEnabled;
+  var pointerEnabledSupport = nx.get(global, 'navigator.pointerEnabled');
+  var msPointerEnabledSupport = nx.get(global, 'navigator.msPointerEnabled');
   var touchSupport = 'ontouchstart' in global;
   var EVENTS_POINTER = ['pointerdown', 'pointermove', 'pointerup'];
   var EVENTS_MS_POINTER = ['MSPointerDown', 'MSPointerMove', 'MSPointerUp'];
